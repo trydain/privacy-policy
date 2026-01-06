@@ -1,26 +1,69 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Gizlilik Politikası</title>
+    <title>Privacy Policy | Gizlilik Politikası - yeeAI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 6px 12px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+        h1, h2 {
+            color: #333;
+        }
+    </style>
+    <script>
+        function setLanguage(lang) {
+            document.getElementById("tr").style.display = lang === 'tr' ? 'block' : 'none';
+            document.getElementById("en").style.display = lang === 'en' ? 'block' : 'none';
+            document.documentElement.lang = lang;
+        }
+    </script>
 </head>
-<body>
+
+<body onload="setLanguage('tr')">
+
+<div class="lang-switch">
+    <strong>Language:</strong>
+    <button onclick="setLanguage('tr')">TR</button>
+    <button onclick="setLanguage('en')">EN</button>
+</div>
+
+<!-- TÜRKÇE -->
+<div id="tr">
     <h1>Gizlilik Politikası</h1>
 
-    <p>Bu gizlilik politikası, <strong>yeeAI</strong> uygulaması için geçerlidir.</p>
+    <p>Bu gizlilik politikası, <strong>yeeAI</strong> mobil uygulaması için geçerlidir.</p>
 
     <h2>Toplanan Veriler</h2>
     <p>
         yeeAI uygulaması, uygulamanın düzgün çalışmasını sağlamak ve reklam hizmetleri sunmak amacıyla
         bazı kişisel olmayan verileri toplayabilir.
     </p>
-
     <ul>
         <li>Cihaz bilgileri (cihaz türü, işletim sistemi sürümü)</li>
         <li>Reklam kimliği</li>
         <li>Uygulama kullanım bilgileri</li>
     </ul>
+
+    <h2>Yapay Zeka ve API Kullanımı</h2>
+    <p>
+        Uygulama, yemek tarifleri ve öneriler sunmak amacıyla yapay zeka destekli servisler ve
+        harici API’ler kullanabilir. Kullanıcı tarafından girilen veriler, yalnızca bu hizmetlerin
+        sağlanması amacıyla işlenir.
+    </p>
 
     <h2>Reklamlar</h2>
     <p>
@@ -28,52 +71,65 @@
         uygun reklamlar göstermek için çerezler ve benzeri teknolojiler kullanabilir.
     </p>
     <p>
-        Google’ın reklam ve içerik ağı gizlilik politikası hakkında daha fazla bilgi için:
-        <br>
+        Google gizlilik politikası:
         <a href="https://policies.google.com/privacy" target="_blank">
             https://policies.google.com/privacy
         </a>
     </p>
 
-    <h2>İnternet ve API Kullanımı</h2>
-    <p>
-        Uygulama, internet bağlantısı aracılığıyla harici servisler ve API’lerle iletişim kurabilir.
-        Bu bağlantılar, uygulamanın sunduğu özelliklerin çalışması için gereklidir.
-    </p>
-
     <h2>Üçüncü Taraf Hizmetleri</h2>
-    <p>
-        Uygulama aşağıdaki üçüncü taraf hizmetlerini kullanabilir:
-    </p>
     <ul>
         <li>Google AdMob</li>
     </ul>
 
     <h2>Veri Güvenliği</h2>
     <p>
-        Toplanan verilerin güvenliğini sağlamak için makul teknik önlemler alınmaktadır.
-        Ancak internet üzerinden yapılan hiçbir veri aktarımının %100 güvenli olduğu garanti edilemez.
+        Toplanan verilerin güvenliğini sağlamak için makul teknik önlemler alınmaktadır. Ancak
+        internet üzerinden yapılan veri aktarımının tamamen güvenli olduğu garanti edilemez.
     </p>
 
     <h2>Çocukların Gizliliği</h2>
     <p>
-        yeeAI uygulaması 13 yaşın altındaki çocukları hedef almaz.
-        Bilinçli olarak 13 yaşın altındaki çocuklardan kişisel veri toplanmaz.
+        yeeAI uygulaması 13 yaşın altındaki çocukları hedef almaz ve bilinçli olarak
+        bu yaş grubundan kişisel veri toplamaz.
     </p>
 
     <h2>Gizlilik Politikası Değişiklikleri</h2>
     <p>
-        Bu gizlilik politikası zaman zaman güncellenebilir. Yapılan değişiklikler bu sayfa üzerinden
+        Bu gizlilik politikası zaman zaman güncellenebilir. Güncellemeler bu sayfa üzerinden
         yayınlanacaktır.
     </p>
 
     <h2>İletişim</h2>
     <p>
-        Gizlilik politikası ile ilgili sorularınız için bizimle iletişime geçebilirsiniz:
-    </p>
-    <p>
         Geliştirici: <strong>trydain</strong><br>
         E-posta: <strong>yusufemreor1990@gmail.com</strong>
     </p>
-</body>
-</html>
+</div>
+
+<!-- ENGLISH -->
+<div id="en" style="display:none;">
+    <h1>Privacy Policy</h1>
+
+    <p>This privacy policy applies to the <strong>yeeAI</strong> mobile application.</p>
+
+    <h2>Information We Collect</h2>
+    <p>
+        yeeAI may collect certain non-personal information to ensure proper functionality
+        of the app and to provide advertising services.
+    </p>
+    <ul>
+        <li>Device information (device type, operating system version)</li>
+        <li>Advertising ID</li>
+        <li>App usage data</li>
+    </ul>
+
+    <h2>AI and API Usage</h2>
+    <p>
+        The app may use artificial intelligence services and third-party APIs to provide
+        recipe recommendations. User input is processed solely to deliver these features.
+    </p>
+
+    <h2>Advertisements</h2>
+    <p>
+        The app uses Google AdMob for advertising. AdMob may use co
